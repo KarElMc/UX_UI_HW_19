@@ -1,0 +1,513 @@
+body {  
+margin-left: 6%;
+margin-right: 6%;
+margin-top: 4%;
+margin-bottom: 5%;
+justify-content: center;
+}
+
+/* Navigation Section styled using flex*/    
+.navigation {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-container:hover {
+        background-color: rgba(228,217,111,0.52);
+        border-top-left-radius: 36%;
+        border-top-right-radius: 4%;
+        border-bottom-left-radius: 4%;
+        border-bottom-right-radius: 36%;
+    }
+        .logo-container img{
+            width:160px;
+            height: auto;
+        }
+        .logo-info {
+            text-align: center;
+        }
+            .logo-info h4 {
+                font-family:'Lora',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size:20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #373434;
+                letter-spacing: 1.3;
+                margin:0;  
+            }
+            .logo-info p2 {
+                font-family:'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #373434;
+                text-transform: uppercase;
+                letter-spacing: 1.1;
+                margin:0;      
+            } 
+    
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        }
+            .menu li {
+                font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:24px;
+                font-weight: 500;
+                color: #337E83;
+                letter-spacing: 1.5;
+                line-height: normal;
+                padding: 25px;
+            }
+            .menu li:hover {
+                background-color: rgba(176,224,230,0.5);
+                border-radius: 36%;
+            }
+        .icon {
+              display:none;
+        }
+    
+/* hero Section styled using flex*/    
+    .heroContent {
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+        .mypicture {
+            width: 30%;
+            height:auto;
+            padding: 5%;
+        }
+        .mypicture:hover {
+            transform: rotate(90);
+        }
+        
+
+        .intro-container {
+            width: 40%;
+            padding-left: 5%;
+        }
+
+
+
+/* Work Section styled in a grid rather than flexbox to align more neatly */
+    
+    .myWork h1 {
+        display:flex;
+        justify-content: center;
+    }    
+    .workGrid {
+        display: grid;
+        grid-template-rows: 200px 100px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left:6%;
+        margin-right:6%;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+        .workGridItem {
+            max-width: 300px;
+            padding: 50px auto;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+         
+            .USDAImg {
+                grid-row: 1;
+                grid-column: 1;
+            }
+                .USDAimageContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .USDAimageContainer img{
+                    width: 75%;
+                    justify-content: center;
+                }
+                .scaledImg {
+                    transform: scale(0.7)
+            }
+            .SouloImg {
+                grid-row: 1;
+                grid-column: 2;
+                background-color: #B0e0e6;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: top;
+            }
+            .SouloimageContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+            .SouloscaledImg {
+                transform: scale(0.4);
+                width: 100%;
+            }
+
+            .BabyThriftImg {
+                grid-row: 1;
+                grid-column: 3;
+                background-image: url(../images/Cases_Babythrift_User.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 1em;
+            }
+        
+            .USDAtitle {
+                grid-row: 2;
+                grid-column: 1;
+            }
+            .Soulotitle {
+                grid-row: 2;
+                grid-column: 2;
+                background-color:
+            }
+            .BabyThriftTitle {
+                grid-row: 2;
+                grid-column: 3;
+            }
+            
+            .USDAsummary {
+                grid-row: 3;
+                grid-column: 1;
+            }
+            .USDAsummary:hover {
+                background-color: rgba(228,217,111,0.52);
+                border-top-left-radius: 36%;
+                border-top-right-radius: 4%;
+                border-bottom-left-radius: 4%;
+                border-bottom-right-radius: 36%;
+            }
+            .Soulosummary {
+                grid-row: 3;
+                grid-column: 2;
+            }
+            .Soulosummary:hover {
+                background-color: rgba(176,224,230,0.5);
+                border-top-left-radius: 36%;
+                border-top-right-radius: 4%;
+                border-bottom-left-radius: 4%;
+                border-bottom-right-radius: 36%;
+            }
+            .BabyThriftsummary {
+                grid-row: 3;
+                grid-column: 3;
+            }
+            .BabyThriftsummary:hover {
+                background-color: rgba(255,102,102,0.32);
+                border-top-left-radius: 36%;
+                border-top-right-radius: 4%;
+                border-bottom-left-radius: 4%;
+                border-bottom-right-radius: 36%;
+            }
+
+
+/* About Section envisioned enventually as a separate page */
+.about {
+    display: block;
+    text-align: center;
+}
+    .history >p{
+    padding-bottom: 4%;
+        }
+        #worktimeline {
+            width:100%;
+            height:100%;
+        }
+.strengths {
+    display: block;
+    text-align: left;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.strengths h1 {
+    text-align: center;
+}
+/* Skills Section envisioned as accordion menu as part of About page*/
+.mySkills {
+    margin-bottom: 100px;
+}
+.mySkills h1{
+    text-align: center;
+}
+/* Working version of simple accordion following https://www.youtube.com/watch?v=Srj2YPHjsn4*/
+#accordion-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.card {
+    color: #373434;
+    cursor:pointer;
+    margin-bottom: 5px;
+}
+#Research {
+    background-color: rgba(228,217,111,0.82);
+    padding-left: 8px;
+    margin: 0;
+
+}
+#Research:hover {
+    background-color: rgba(228,217,111,0.52);
+    color: rgba(55,52,52,.062);
+
+}
+#Experience {
+    background-color: rgba(255,102,102,0.62);
+    padding-left: 8px;
+    margin: 0;  
+}
+#Experience:hover {
+    background-color: rgba(255,102,102,.82);
+    padding-left: 8px;
+    margin: 0;  
+}
+#Problem {
+    background-color: #B0e0e6;
+    padding-left: 8px;
+    margin: 0;
+}
+#Problem:hover {
+    background-color: rgba(176,224,230,0.5);
+    padding-left: 8px;
+    margin: 0;
+}
+.card-body {
+    display: none;
+    list-style: none;
+    background-color: white;
+    cursor: default;
+}
+/* Working version of simple accordion following https://www.youtube.com/watch?v=Srj2YPHjsn4*/
+
+.footer {
+    margin: 6% auto;
+
+}
+    .flexContainer {
+        position: relative;
+        padding-bottom: .4em;
+    }
+    #curvyPointer {
+        position: absolute;
+        left: 24em;
+        top: 6em;
+
+    }
+    .email {
+        font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:24px;
+        font-weight: 500;
+        color: #373434;
+        letter-spacing: 1;
+        line-height: normal;
+        text-decoration: underline;
+        position: relative;
+        margin-bottom: 150px;
+    }
+ 
+
+/* Typography Styles */
+
+h1 {
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:60px;
+    font-weight: 700;
+    color: #337E83;
+    letter-spacing: 4;
+    padding-top: 2%;
+    padding-bottom: 4;
+}
+h2 {
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:48px;
+    font-weight: 700;
+    color: #996699;
+    letter-spacing: 1.1;
+    padding-top: 3;        
+}
+h3 {
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:36px;
+    font-weight: 500;
+    color: #373434;
+    letter-spacing: 2;
+
+}
+h4 {
+    font-family:'Lora',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:24px;
+    font-weight: 600;
+    color: #373434;
+    letter-spacing: 2;    
+}
+h5 {
+    font-family:'Lora',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:28px;
+    font-weight: 600;
+    color: #373434;
+    letter-spacing: 2;    
+}
+p {
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:24px;
+    font-weight: 500;
+    color: #373434;
+    letter-spacing: 1;
+    line-height: normal;
+}
+p2 {
+    font-family:'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #373434;
+    letter-spacing: 1.1;      
+}
+p3 { font-family:'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #373434;
+    letter-spacing: 1.1;  }
+ul li {
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:28;
+    font-weight: 500;
+    color: #373434;
+    line-height: 48px;
+}
+
+a {
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:28px;
+            font-weight: 500;
+            color: #00a4b0;
+            letter-spacing: 1;
+            line-height: normal;
+            text-decoration: underline;
+            position: absolute;
+            left: 0;
+            top:-1.5em;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width:600px) {
+    .menu {
+        display: none;
+    }
+    .icon {
+        margin-right: auto;
+    }
+    .heroContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 3% auto;
+    }
+    .mypicture {
+        transform: scale(.6) translate(-2em) ;
+        padding: 1%;
+    }
+    .intro-container {
+        max-width: 500px;
+        width: 100%;
+        padding: 1%;
+    }
+    .myWork {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 3% auto;
+    }
+    #workGrid {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      column-gap: 0;
+      row-gap: 5px;
+      margin:50px;
+    }
+   .workGridItem {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+       justify-content: center;
+        align-items: center;
+        margin-left:50px;
+        margin-right:50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+   }
+    .USDAImg {
+        height: 148px;
+        grid-row: 1;
+        grid-column: 1;
+       align-items: center;
+       margin-top: 20px;;
+    }
+    .SouloImg {
+       height: 168px;
+        grid-row: 4;
+        grid-column: 1;
+        margin-bottom: 5px;
+    }
+     .BabyThriftImg {
+        height: 200px;
+        grid-row: 7;
+        grid-column: 1;
+        margin-bottom: 5px;
+    }
+     .USDAtitle {
+        width:100%;
+        height: 48px;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .Soulotitle {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    .BabyThriftTitle {
+        grid-row: 8;
+        grid-column: 1;
+    }
+    
+    .USDAsummary {
+        grid-row: 3;
+        grid-column: 1;
+        margin-top: 5px;
+        margin-bottom:50px;
+    }
+    .Soulosummary {
+        height: 148px;
+        grid-row: 6;
+        grid-column: 1;
+        margin-top: 5px;
+        margin-bottom:50px;
+    }
+    .BabyThriftsummary {
+        grid-row: 9;
+        grid-column: 1;
+        margin-top: 5px;
+        margin-bottom:50px;
+    }
+     #worktimeline {
+        transform: scale(.5); 
+     }
+}
